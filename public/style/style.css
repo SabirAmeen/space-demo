@@ -131,13 +131,13 @@
 .arrow-right{
 	background-color: #D7DAE2;
 }
-a {
+.links {
     text-decoration: none;
 }
-a:hover{
+.links:hover{
     text-decoration: underline;
 }
-button {
+.tabs {
     color: #fff;
 }
 
@@ -170,6 +170,9 @@ button {
 	box-sizing: border-box;
 	display: inline-block;
 }
+.training-nav ul{
+	margin:0;
+}
 .training-nav li {
     display: inline-block;
 }
@@ -189,4 +192,27 @@ button {
 	border:1px solid #3CB3EE;
     border-top: 5px solid #3CB3EE;
     margin-top: 1px;
+}
+.train-data{
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 2rem 1rem;
+}
+.train-article{
+		width:50%;
+		display: inline-block;;
+		border: 1px solid #B0BDCC;
+		padding:5px 2rem 1rem 5px;
+}
+.train-article:hover{
+	background-color:#FBFEE5;
+}
+.train-article header{
+	padding:0.5rem;
+}
+#attend{
+	text-align: center;
+}
+#train-name,#train-time,#train-loc,#train-seat,#train-status{
+	display: block;
 }

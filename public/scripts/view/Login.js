@@ -27,7 +27,6 @@ module.exports = Backbone.View.extend({
 	gotoHome: function(e){
 		var username  = $('#username').val();
 		var password = $('#password').val();
-		console.log(this.model);
 		this.model.set({email:username,password:password});
 		var check=app.user.isValid();
 		if(!check){

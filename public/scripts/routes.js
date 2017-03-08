@@ -3,11 +3,8 @@ var $ = require('jquery');
 var Train_list = require('./view/Training_list.js');
 var Login = require('./view/Login.js');
 var User = require('./model/User.js');
-
-var trainingCollection = require('./collection/training_collection.js');
-
 var Sidenav = require('./view/sidenav-view.js');
-
+var trainingCollection = require('./collection/training_collection.js');
 
 module.exports = Backbone.Router.extend({
 
@@ -75,13 +72,8 @@ module.exports = Backbone.Router.extend({
     },
     Training:function(){
         app.sidenav = new Sidenav();
-         var trainInfo = new trainingCollection();
-        app.trainingList = new Train_list({collection:trainInfo});
- 
-
-
-     
-        
+        app.trainingList = new Train_list({collection:new trainingCollection()});
+    
 
     }
 });
